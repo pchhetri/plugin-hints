@@ -22,10 +22,14 @@ module.exports = {
                 // Available styles: info, danger, tip, working
                 var style = block.kwargs.style || 'info';
 
-                return '<div class="alert alert-'+CLASSES[style]+'">'
-                    + ICONS[style]
-                    + block.body
-                    + '</div>';
+                return this.renderInline("markdown", block.body)
+                  .then(function(str){
+                      return '<div class="alert alert-'+CLASSES[style]+'">'
+                        + ICONS[style]
+                        + str
+                        + '</div>';
+                  });
+
             }
         }
     }
