@@ -20,7 +20,7 @@ module.exports = {
         hint: {
             process: function (block) {
                 // Available styles: info, danger, tip, working
-                var style = block.kwargs.style || 'info';
+                var style = block.args[0].trim() || 'info';
 
                 return this.renderInline("markdown", block.body)
                   .then(function(str){
