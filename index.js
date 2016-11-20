@@ -11,7 +11,7 @@ function makeIcon(name) {
 var ICONS = {
     info: makeIcon('info'),
     tip: makeIcon('mortar-board'), // Diploma hat
-    danger: makeIcon('exclamation'),
+    danger: makeIcon('exclamation-triangle'),
     working: makeIcon('wrench')
 };
 
