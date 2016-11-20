@@ -9,7 +9,7 @@ function makeIcon(name) {
     return '<i class="fa fa-'+name+'" style=""></i>';
 }
 var ICONS = {
-    info: makeIcon('info'),
+    info: makeIcon('info-circle'),
     tip: makeIcon('mortar-board'), // Diploma hat
     danger: makeIcon('exclamation-triangle'),
     working: makeIcon('wrench')
